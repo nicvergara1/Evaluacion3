@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-button slot="start" fill="clear" color="dark" href="/folder/inbox"><ion-icon name="arrow-back" ></ion-icon></ion-button>
+    <ion-title>Recuperar contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    
+  </ion-header>
+  <ion-card style="margin-top: 200px;">
+    <ion-card-header>
+      <ion-card-title style="text-align: center;">Recuperar contraseña</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-item>
+        <ion-input labelPlacement="floating" placeholder="usuario@duocuc.cl">
+          <div slot="label">Ingresa tu Email <ion-text color="danger"></ion-text></div>
+        </ion-input>
+      </ion-item>
+    </ion-card-content>
+  <div class="btn-center">
+    <ion-button fill="solid" href="/login" >Recuperar</ion-button>
+  </div>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title #titulo style="text-align: start;">ASISTENCIAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+  </ion-header>
+
+
+  <ion-card style="margin-top: 120px;">
+    <ion-card-header>
+      <ion-card-title style="text-align: center;">Iniciar sesion</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-row>
+        <ion-col col-4></ion-col>
+        <ion-col col-4>
+          <img class="imagen-login" src="https://seeklogo.com/images/D/duoc-uc-logo-F1437952BE-seeklogo.com.png" alt="">
+        </ion-col>
+        <ion-col col-4></ion-col>
+      </ion-row>
+
+      <form [formGroup]="formularioLogin">
+
+        <ion-item>
+          <ion-label position="floating">Nombre de Usuario</ion-label>
+          <ion-input formControlName="nombre" type="text" required=""></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input formControlName="contrasena" type="password" required="" ></ion-input>
+        </ion-item>
+
+        <ion-button size="small" fill="clear" color="danger" href="/contacto">Olvide mi constraseña</ion-button>
+
+        <div class="btn-center">
+          <ion-button size="default" fill="solid" (click)="ingresar()">Iniciar sesion</ion-button>
+        </div>
+
+        <ion-row>
+          <ion-col>
+            <ion-button type="submit" color="primary" expand="block" [routerLink]="['/registro']">REGISTRAR</ion-button>
+          </ion-col>
+        </ion-row>
+
+      </form>
+
+
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>
